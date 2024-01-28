@@ -427,6 +427,13 @@ label{
         width: 50% !important;
         margin: auto;
     }
+
+    body{
+        zoom:1 !important;
+    }
+    .res{
+        color: #FFF !important;
+    }
 }
 
 
@@ -480,7 +487,12 @@ form{
     border-radius: 25px  ;
     display: block;
     width: 150px  ;
-    padding: 7px;
+    padding: 7px;}
 
-
-}
+    
+body{
+        zoom:1 !important;
+    }
+    .res{
+        color: #FFF !important;
+    }

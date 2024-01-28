@@ -187,7 +187,7 @@ a
                                 style=" background-color: #50d7d7  ;padding:10px 0;margin-top: 10px;">
                                 <div class="row my-2 style-with">
                                     <a href="./index.html" class="link col btn-danger rounded-5 p-2 text-center "
-                                        id="confirmBtne" style="display: none; ">Sign Up</a>
+                                        id="confirmBtn" style="display: none; ">Sign Up</a>
                                     <span class="col">
                                     </span>
                                     <a href="./index.html"
@@ -215,7 +215,7 @@ a
                                 <h1 class="w-50 mb-5 rounded-2  Address mx-auto ">sign in</h1>
                             </div>
                             <div class="container mt-5 mx-auto align-items-center p-3 mx-3 ">
-                                <form action="" class="was-validated" id="cardForme">
+                                <form action="" class="was-validated" id="cardForm">
                                     <table class="table table-borderless ">
                                         <tbody class="">
 
@@ -225,9 +225,9 @@ a
                                                     <label class="form-label col "> Email Or Mobile Numbe : </label>
                                                 </td>
                                                 <td>
-                                                    <input type="text" name="" id=""
+                                                    <input type="email" name="" id=""
                                                         class=" form-control form-control-sm inputm "
-                                                        pattern="[A-Za-z0-9]+" placeholder="Email Or  Numbe"
+                                                        pattern="[A-Za-z0-9@]+" placeholder="Email Or  Numbe"
                                                         minlength="3" maxlength="19" required>
                                                     <div class="valid-feedback"></div>
                                                     <div class="invalid-feedback inputm mx-auto">Please enter email*
@@ -263,7 +263,7 @@ a
                                 style=" background-color: #50d7d7  ;padding:10px 0;margin-top: 80px;">
                                 <div class="row my-2 style-with">
                                     <a href="./index.html" class="link col btn-danger rounded-5 p-2 text-center "
-                                        id="confirmBtne" style="display: none; ">sign in</a>
+                                        id="confirmBtn" style="display: none; ">sign in</a>
                                     <span class="col">
                                     </span>
                                     <a href="./index.html"
@@ -305,11 +305,11 @@ a
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const cardForme = document.getElementById('cardForme');
-            const confirmBtn = document.getElementById('confirmBtne');
+            const cardForm = document.getElementById('cardForm');
+            const confirmBtn = document.getElementById('confirmBtn');
 
             function checkFormValidity() {
-                const inputs = cardForme.querySelectorAll('input[required]');
+                const inputs = cardForm.querySelectorAll('input[required]');
                 let isValid = true;
                 inputs.forEach(function (input) {
                     if (!input.value.trim()) {
@@ -327,7 +327,7 @@ a
                 }
             }
 
-            cardForme.addEventListener('input', toggleConfirmBtnVisibility);
+            cardForm.addEventListener('input', toggleConfirmBtnVisibility);
 
             confirmBtn.addEventListener('click', function () {
                 alert("welcome back");

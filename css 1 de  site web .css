@@ -6,9 +6,11 @@
     list-style: none;
 }
 body{
-    zoom:1;
+    zoom:1 !important;
 }
-
+.res{
+    color: #FFF !important;
+}
 
 
 
