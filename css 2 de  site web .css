@@ -274,9 +274,9 @@ label{
 
 .span001 {
     padding: 3px;
-    background-color: rgb(0, 18, 97);
+    background-color: green;
     border-radius: 5px;
-    color: #000000;
+    color:#fff ;
     font-size: 14px;
     font-weight: bold;
 }
